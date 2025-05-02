@@ -1,4 +1,4 @@
-Here's a more concise version of your **Orix** Chrome extension README:
+![Orix Logo](logo.png)
 
 ---
 
