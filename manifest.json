@@ -13,6 +13,9 @@
       "js": [
         "content-script.js"
       ],
+      "css": [
+        "style.css"
+      ],
       "matches": [
         "<all_urls>"
       ]
