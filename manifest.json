@@ -3,6 +3,12 @@
     "name": "Metafreze",
     "version": "1.0.0",
     "description": "Minimal inline translation extension",
+    
+    "icons": {
+      "16": "assets/logo16.png",
+      "48": "assets/logo.png",
+      "128": "assets/logo.png"
+    },
     "background": {
         "service_worker": "service-worker.js"
       },
