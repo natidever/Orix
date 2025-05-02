@@ -40,6 +40,7 @@ let range = selection.getRangeAt(0)
 
  let wordDefinition= await fetchDefinition(selectedWord)
   translation_popup.textContent = isLoading?"Loading":wordDefinition
+
  let updatePopupPosition =()=>{
    console.log("resized")
    let rect = range.getBoundingClientRect()
@@ -88,8 +89,18 @@ fetchDefinition=async (word)=>{
    try{
       let response= await  fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
       let data =await   response.json()
+       if(response.status==200){
       isLoading= false
-      return data[0].meanings[0].definitions[0].definition
+
+         return data[0].meanings[0].definitions[0].definition
+
+       }else{
+      isLoading= false
+
+         return "Definition not found"
+         
+       }
+     
 
    }catch(e){
       console.log(`error during translating`,e)
