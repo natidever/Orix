@@ -1,4 +1,4 @@
-![Orix Logo](logo.png)
+![Orix Logo](assets/logo.png)
 
 ---
 
